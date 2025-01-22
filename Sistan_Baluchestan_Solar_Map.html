@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e39eb71cdb63a14a77ccd8f2534fc7b7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e39eb71cdb63a14a77ccd8f2534fc7b7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e39eb71cdb63a14a77ccd8f2534fc7b7 = L.map(
+                "map_e39eb71cdb63a14a77ccd8f2534fc7b7",
+                {
+                    center: [26.0, 60.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_12995094de7d84311d340415e3282608 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e39eb71cdb63a14a77ccd8f2534fc7b7);
+        
+    
+            var marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3 = L.markerClusterGroup(
+                {}
+            );
+            map_e39eb71cdb63a14a77ccd8f2534fc7b7.addLayer(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+            var marker_2a81d56aa6e994d7db647106c8cfb14d = L.marker(
+                [25.7515, 60.912],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_832aadcac82b9e88b60001644c12019e = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_2a81d56aa6e994d7db647106c8cfb14d.setIcon(custom_icon_832aadcac82b9e88b60001644c12019e);
+        
+    
+        var popup_22614e98fe19696aca9f6342044e7d90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_750b7242c11b4a6406bc30d59a56abb0 = $(`<div id="html_750b7242c11b4a6406bc30d59a56abb0" style="width: 100.0%; height: 100.0%;">Station: Owraki<br>Population: 10387</div>`)[0];
+            popup_22614e98fe19696aca9f6342044e7d90.setContent(html_750b7242c11b4a6406bc30d59a56abb0);
+        
+
+        marker_2a81d56aa6e994d7db647106c8cfb14d.bindPopup(popup_22614e98fe19696aca9f6342044e7d90)
+        ;
+
+        
+    
+    
+            marker_2a81d56aa6e994d7db647106c8cfb14d.bindTooltip(
+                `<div>
+                     Owraki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11b46ab04c2a675586b6b27a25fe2a70 = L.marker(
+                [25.6427, 60.9763],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_314c471aa9760a9e5d1c5774c0b56092 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_11b46ab04c2a675586b6b27a25fe2a70.setIcon(custom_icon_314c471aa9760a9e5d1c5774c0b56092);
+        
+    
+        var popup_13937c19473442ddf359f0a4d561ea6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_744322df3a1de2b510ff4ef054d62fd6 = $(`<div id="html_744322df3a1de2b510ff4ef054d62fd6" style="width: 100.0%; height: 100.0%;">Station: Kowrkach<br>Population: 206</div>`)[0];
+            popup_13937c19473442ddf359f0a4d561ea6c.setContent(html_744322df3a1de2b510ff4ef054d62fd6);
+        
+
+        marker_11b46ab04c2a675586b6b27a25fe2a70.bindPopup(popup_13937c19473442ddf359f0a4d561ea6c)
+        ;
+
+        
+    
+    
+            marker_11b46ab04c2a675586b6b27a25fe2a70.bindTooltip(
+                `<div>
+                     Kowrkach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4defc84eb7c1189c3414caa58a54b1d = L.marker(
+                [25.739, 60.814],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_fc8906830367ee86a1abbadc66f0f405 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b16fbb08d85f3c0785722f95a8b3961d = $(`<div id="html_b16fbb08d85f3c0785722f95a8b3961d" style="width: 100.0%; height: 100.0%;">Station: Pir Sohrab Water Refinery<br>Population: 287</div>`)[0];
+            popup_fc8906830367ee86a1abbadc66f0f405.setContent(html_b16fbb08d85f3c0785722f95a8b3961d);
+        
+
+        marker_b4defc84eb7c1189c3414caa58a54b1d.bindPopup(popup_fc8906830367ee86a1abbadc66f0f405)
+        ;
+
+        
+    
+    
+            marker_b4defc84eb7c1189c3414caa58a54b1d.bindTooltip(
+                `<div>
+                     Pir Sohrab Water Refinery
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91b83afa2f9d8ef930b2e34c0f66fd19 = L.marker(
+                [25.4633, 60.949],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_b354445dd561d4bfda5e7a9a0328e2c9 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_91b83afa2f9d8ef930b2e34c0f66fd19.setIcon(custom_icon_b354445dd561d4bfda5e7a9a0328e2c9);
+        
+    
+        var popup_b51ad8e1dc0fa57068a10f6d72a12dd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e6346793a2a46a484d580441dabe565b = $(`<div id="html_e6346793a2a46a484d580441dabe565b" style="width: 100.0%; height: 100.0%;">Station: Dambedef<br>Population: 1625</div>`)[0];
+            popup_b51ad8e1dc0fa57068a10f6d72a12dd3.setContent(html_e6346793a2a46a484d580441dabe565b);
+        
+
+        marker_91b83afa2f9d8ef930b2e34c0f66fd19.bindPopup(popup_b51ad8e1dc0fa57068a10f6d72a12dd3)
+        ;
+
+        
+    
+    
+            marker_91b83afa2f9d8ef930b2e34c0f66fd19.bindTooltip(
+                `<div>
+                     Dambedef
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10e7d68c285b6ad407b452fba9e77296 = L.marker(
+                [25.5928, 61.1289],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_6cfd25041bb9992c6d5a7c6289757896 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_10e7d68c285b6ad407b452fba9e77296.setIcon(custom_icon_6cfd25041bb9992c6d5a7c6289757896);
+        
+    
+        var popup_7de18454567eac5cb10e751d4fda0d39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_738c7e7075e0e66c005472c68161ce5b = $(`<div id="html_738c7e7075e0e66c005472c68161ce5b" style="width: 100.0%; height: 100.0%;">Station: Sediq Zehi<br>Population: 2125</div>`)[0];
+            popup_7de18454567eac5cb10e751d4fda0d39.setContent(html_738c7e7075e0e66c005472c68161ce5b);
+        
+
+        marker_10e7d68c285b6ad407b452fba9e77296.bindPopup(popup_7de18454567eac5cb10e751d4fda0d39)
+        ;
+
+        
+    
+    
+            marker_10e7d68c285b6ad407b452fba9e77296.bindTooltip(
+                `<div>
+                     Sediq Zehi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_245cc0a3a46405b643a6bdf1a2f1ab7a = L.marker(
+                [25.3591, 60.7517],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_7b4a164a0213dd1bd9a3da9af43512f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8943f9fc7c598ded813dfc853824d40 = $(`<div id="html_a8943f9fc7c598ded813dfc853824d40" style="width: 100.0%; height: 100.0%;">Station: Road Police Station <br>Population: 54768</div>`)[0];
+            popup_7b4a164a0213dd1bd9a3da9af43512f5.setContent(html_a8943f9fc7c598ded813dfc853824d40);
+        
+
+        marker_245cc0a3a46405b643a6bdf1a2f1ab7a.bindPopup(popup_7b4a164a0213dd1bd9a3da9af43512f5)
+        ;
+
+        
+    
+    
+            marker_245cc0a3a46405b643a6bdf1a2f1ab7a.bindTooltip(
+                `<div>
+                     Road Police Station 
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e7a4a04c57ab0cbd39976ac526f5287 = L.marker(
+                [25.3006, 60.6937],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_49fd20d946789500ebb8f80ce0321b97 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_2e7a4a04c57ab0cbd39976ac526f5287.setIcon(custom_icon_49fd20d946789500ebb8f80ce0321b97);
+        
+    
+        var popup_8eea04c4eccc6c554b55e62bfadc2cc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b05f28a760acf33825f7b4737745df42 = $(`<div id="html_b05f28a760acf33825f7b4737745df42" style="width: 100.0%; height: 100.0%;">Station: Terminal Station<br>Population: 54768</div>`)[0];
+            popup_8eea04c4eccc6c554b55e62bfadc2cc5.setContent(html_b05f28a760acf33825f7b4737745df42);
+        
+
+        marker_2e7a4a04c57ab0cbd39976ac526f5287.bindPopup(popup_8eea04c4eccc6c554b55e62bfadc2cc5)
+        ;
+
+        
+    
+    
+            marker_2e7a4a04c57ab0cbd39976ac526f5287.bindTooltip(
+                `<div>
+                     Terminal Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bef6ac401f7263b75f1d5f3b92fcf0ac = L.marker(
+                [25.707837, 61.448582],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_a182d33c3b574f0329b3df7825f7be6e = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_bef6ac401f7263b75f1d5f3b92fcf0ac.setIcon(custom_icon_a182d33c3b574f0329b3df7825f7be6e);
+        
+    
+        var popup_8bbadd3ef75a1ee2d195c72c477f8c14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_05605ef43190694521243332297eba68 = $(`<div id="html_05605ef43190694521243332297eba68" style="width: 100.0%; height: 100.0%;">Station: Shirgwaz<br>Population: 876</div>`)[0];
+            popup_8bbadd3ef75a1ee2d195c72c477f8c14.setContent(html_05605ef43190694521243332297eba68);
+        
+
+        marker_bef6ac401f7263b75f1d5f3b92fcf0ac.bindPopup(popup_8bbadd3ef75a1ee2d195c72c477f8c14)
+        ;
+
+        
+    
+    
+            marker_bef6ac401f7263b75f1d5f3b92fcf0ac.bindTooltip(
+                `<div>
+                     Shirgwaz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3655faec4792106ffc1de473c3a35db9 = L.marker(
+                [25.757258, 61.460315],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_43370202f6fb5a8cff98beddc6d80df6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dadbd823d2f4061209e0e0fc2233619 = $(`<div id="html_1dadbd823d2f4061209e0e0fc2233619" style="width: 100.0%; height: 100.0%;">Station: Kek Sooch<br>Population: 2733</div>`)[0];
+            popup_43370202f6fb5a8cff98beddc6d80df6.setContent(html_1dadbd823d2f4061209e0e0fc2233619);
+        
+
+        marker_3655faec4792106ffc1de473c3a35db9.bindPopup(popup_43370202f6fb5a8cff98beddc6d80df6)
+        ;
+
+        
+    
+    
+            marker_3655faec4792106ffc1de473c3a35db9.bindTooltip(
+                `<div>
+                     Kek Sooch
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57bb25c4934ea2424e3ef4e0c5f9f9c6 = L.marker(
+                [25.502755, 61.183777],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_1fb5fc05f1f0ab74a2d2d70383f5abbf = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_57bb25c4934ea2424e3ef4e0c5f9f9c6.setIcon(custom_icon_1fb5fc05f1f0ab74a2d2d70383f5abbf);
+        
+    
+        var popup_9dd6c359185bb5870fb1f157a0bdd87b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a434504e8c601a105f7e466e71ddff3f = $(`<div id="html_a434504e8c601a105f7e466e71ddff3f" style="width: 100.0%; height: 100.0%;">Station: Nobandian (Next to Police Station)<br>Population: 1519</div>`)[0];
+            popup_9dd6c359185bb5870fb1f157a0bdd87b.setContent(html_a434504e8c601a105f7e466e71ddff3f);
+        
+
+        marker_57bb25c4934ea2424e3ef4e0c5f9f9c6.bindPopup(popup_9dd6c359185bb5870fb1f157a0bdd87b)
+        ;
+
+        
+    
+    
+            marker_57bb25c4934ea2424e3ef4e0c5f9f9c6.bindTooltip(
+                `<div>
+                     Nobandian (Next to Police Station)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_703f8f40339f9478573ac49b8b2d318c = L.marker(
+                [25.548727, 61.218612],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_11b4e715578e3f1ba73b77c180c8a6d7 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_703f8f40339f9478573ac49b8b2d318c.setIcon(custom_icon_11b4e715578e3f1ba73b77c180c8a6d7);
+        
+    
+        var popup_c10675b9a2d1509e60e81e49b37889dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4a8263551499f198b83e76ad6aa482f = $(`<div id="html_a4a8263551499f198b83e76ad6aa482f" style="width: 100.0%; height: 100.0%;">Station: Golestan<br>Population: 553</div>`)[0];
+            popup_c10675b9a2d1509e60e81e49b37889dc.setContent(html_a4a8263551499f198b83e76ad6aa482f);
+        
+
+        marker_703f8f40339f9478573ac49b8b2d318c.bindPopup(popup_c10675b9a2d1509e60e81e49b37889dc)
+        ;
+
+        
+    
+    
+            marker_703f8f40339f9478573ac49b8b2d318c.bindTooltip(
+                `<div>
+                     Golestan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0a12e5ed2130e483d49ba7053f9ffec = L.marker(
+                [52.5429, 61.2759],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_90aaba1371e300e5d79d148c54e9e149 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_a0a12e5ed2130e483d49ba7053f9ffec.setIcon(custom_icon_90aaba1371e300e5d79d148c54e9e149);
+        
+    
+        var popup_3da250f37f58eb401955b085fe2e01f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_07c49428ee8b0fa765ae869c682112a8 = $(`<div id="html_07c49428ee8b0fa765ae869c682112a8" style="width: 100.0%; height: 100.0%;">Station: Sangaan<br>Population: 986</div>`)[0];
+            popup_3da250f37f58eb401955b085fe2e01f8.setContent(html_07c49428ee8b0fa765ae869c682112a8);
+        
+
+        marker_a0a12e5ed2130e483d49ba7053f9ffec.bindPopup(popup_3da250f37f58eb401955b085fe2e01f8)
+        ;
+
+        
+    
+    
+            marker_a0a12e5ed2130e483d49ba7053f9ffec.bindTooltip(
+                `<div>
+                     Sangaan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d5d9aec2990ee77e76d8fbd95e14268 = L.marker(
+                [25.6805, 61.3875],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_1eec625f9bc8701aaac6e91aa3ba5cfd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1eedb671662c66243fa4c2a36e81c046 = $(`<div id="html_1eedb671662c66243fa4c2a36e81c046" style="width: 100.0%; height: 100.0%;">Station: Yaqoob Bazaar<br>Population: 423</div>`)[0];
+            popup_1eec625f9bc8701aaac6e91aa3ba5cfd.setContent(html_1eedb671662c66243fa4c2a36e81c046);
+        
+
+        marker_5d5d9aec2990ee77e76d8fbd95e14268.bindPopup(popup_1eec625f9bc8701aaac6e91aa3ba5cfd)
+        ;
+
+        
+    
+    
+            marker_5d5d9aec2990ee77e76d8fbd95e14268.bindTooltip(
+                `<div>
+                     Yaqoob Bazaar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13478321682eb45f97722d46b9b55037 = L.marker(
+                [25.434601, 61.137418],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_71c2ac0860f85d5dcf1c3ec78a36e948 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33c368217f817b4f00d89c0e3db334e0 = $(`<div id="html_33c368217f817b4f00d89c0e3db334e0" style="width: 100.0%; height: 100.0%;">Station: Negour Reservoir<br>Population: 12847</div>`)[0];
+            popup_71c2ac0860f85d5dcf1c3ec78a36e948.setContent(html_33c368217f817b4f00d89c0e3db334e0);
+        
+
+        marker_13478321682eb45f97722d46b9b55037.bindPopup(popup_71c2ac0860f85d5dcf1c3ec78a36e948)
+        ;
+
+        
+    
+    
+            marker_13478321682eb45f97722d46b9b55037.bindTooltip(
+                `<div>
+                     Negour Reservoir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52057407afd154db0a4cb16c4a76f62e = L.marker(
+                [25.3807, 61.1447],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_d752a07a8050baf7c64df202cd2ff714 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6ecf72a016a5508be8484a2a46ff37b7 = $(`<div id="html_6ecf72a016a5508be8484a2a46ff37b7" style="width: 100.0%; height: 100.0%;">Station: Karmbel<br>Population: 2555</div>`)[0];
+            popup_d752a07a8050baf7c64df202cd2ff714.setContent(html_6ecf72a016a5508be8484a2a46ff37b7);
+        
+
+        marker_52057407afd154db0a4cb16c4a76f62e.bindPopup(popup_d752a07a8050baf7c64df202cd2ff714)
+        ;
+
+        
+    
+    
+            marker_52057407afd154db0a4cb16c4a76f62e.bindTooltip(
+                `<div>
+                     Karmbel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b02a241fe49d06dc851beee79cad0e63 = L.marker(
+                [25.700894, 61.364771],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_af88057d27199c17771da5fb8adbd094 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_b02a241fe49d06dc851beee79cad0e63.setIcon(custom_icon_af88057d27199c17771da5fb8adbd094);
+        
+    
+        var popup_71c06be4b7dfad1478bd68bc24065fb1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_564a4fb25ff4b1bdbb2f08a82293e53c = $(`<div id="html_564a4fb25ff4b1bdbb2f08a82293e53c" style="width: 100.0%; height: 100.0%;">Station: Dampak<br>Population: 2609</div>`)[0];
+            popup_71c06be4b7dfad1478bd68bc24065fb1.setContent(html_564a4fb25ff4b1bdbb2f08a82293e53c);
+        
+
+        marker_b02a241fe49d06dc851beee79cad0e63.bindPopup(popup_71c06be4b7dfad1478bd68bc24065fb1)
+        ;
+
+        
+    
+    
+            marker_b02a241fe49d06dc851beee79cad0e63.bindTooltip(
+                `<div>
+                     Dampak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad3c4e72c17078f69b577762110c74a9 = L.marker(
+                [25.3736, 61.6525],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_aa929b596265c8377641e71d0f7abe0e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d6425465136a7772664e2616885b6830 = $(`<div id="html_d6425465136a7772664e2616885b6830" style="width: 100.0%; height: 100.0%;">Station: Rimdan Border<br>Population: 1838</div>`)[0];
+            popup_aa929b596265c8377641e71d0f7abe0e.setContent(html_d6425465136a7772664e2616885b6830);
+        
+
+        marker_ad3c4e72c17078f69b577762110c74a9.bindPopup(popup_aa929b596265c8377641e71d0f7abe0e)
+        ;
+
+        
+    
+    
+            marker_ad3c4e72c17078f69b577762110c74a9.bindTooltip(
+                `<div>
+                     Rimdan Border
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c3d3a9371b31ae7c7422d716d05b93f = L.marker(
+                [25.7572, 61.4621],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_8f7f5a8cd439856842fb03b9bc2835f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fc29c1f4ff5ed509f907baff0a29f2a3 = $(`<div id="html_fc29c1f4ff5ed509f907baff0a29f2a3" style="width: 100.0%; height: 100.0%;">Station: Bahu Kalat<br>Population: 1088</div>`)[0];
+            popup_8f7f5a8cd439856842fb03b9bc2835f0.setContent(html_fc29c1f4ff5ed509f907baff0a29f2a3);
+        
+
+        marker_6c3d3a9371b31ae7c7422d716d05b93f.bindPopup(popup_8f7f5a8cd439856842fb03b9bc2835f0)
+        ;
+
+        
+    
+    
+            marker_6c3d3a9371b31ae7c7422d716d05b93f.bindTooltip(
+                `<div>
+                     Bahu Kalat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_986f61c2b14b0230db7e6ff88689dbdc = L.marker(
+                [25.8903, 61.5142],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_7a68aeb7881aa8172cd1c43265ca6ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98d2a16604101cb485c4de663cfca7a1 = $(`<div id="html_98d2a16604101cb485c4de663cfca7a1" style="width: 100.0%; height: 100.0%;">Station: Rimdan Junction (Transfer to Garmbeit)<br>Population: 2271</div>`)[0];
+            popup_7a68aeb7881aa8172cd1c43265ca6ac4.setContent(html_98d2a16604101cb485c4de663cfca7a1);
+        
+
+        marker_986f61c2b14b0230db7e6ff88689dbdc.bindPopup(popup_7a68aeb7881aa8172cd1c43265ca6ac4)
+        ;
+
+        
+    
+    
+            marker_986f61c2b14b0230db7e6ff88689dbdc.bindTooltip(
+                `<div>
+                     Rimdan Junction (Transfer to Garmbeit)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3a4889fb1007a55a543ce61eeab1139 = L.marker(
+                [25.851352, 61.504655],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_a56183fe86ceec514381e72e47016fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06728cc48940cc1bce59cd1e16e65924 = $(`<div id="html_06728cc48940cc1bce59cd1e16e65924" style="width: 100.0%; height: 100.0%;">Station: Rohgam Villages (Transfer to Dargas)<br>Population: 4413</div>`)[0];
+            popup_a56183fe86ceec514381e72e47016fd8.setContent(html_06728cc48940cc1bce59cd1e16e65924);
+        
+
+        marker_f3a4889fb1007a55a543ce61eeab1139.bindPopup(popup_a56183fe86ceec514381e72e47016fd8)
+        ;
+
+        
+    
+    
+            marker_f3a4889fb1007a55a543ce61eeab1139.bindTooltip(
+                `<div>
+                     Rohgam Villages (Transfer to Dargas)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01095acd782a8be4f91ac607e660f420 = L.marker(
+                [26.21539, 60.7412],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_6c237404dab3c98fe2ae6a6ae740958d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86f22bd80bff510229e5eb7862045235 = $(`<div id="html_86f22bd80bff510229e5eb7862045235" style="width: 100.0%; height: 100.0%;">Station: Well No. 3 of Qasr-e Qand City<br>Population: 2698</div>`)[0];
+            popup_6c237404dab3c98fe2ae6a6ae740958d.setContent(html_86f22bd80bff510229e5eb7862045235);
+        
+
+        marker_01095acd782a8be4f91ac607e660f420.bindPopup(popup_6c237404dab3c98fe2ae6a6ae740958d)
+        ;
+
+        
+    
+    
+            marker_01095acd782a8be4f91ac607e660f420.bindTooltip(
+                `<div>
+                     Well No. 3 of Qasr-e Qand City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97463641a1b6b61901c18c9fcba54af5 = L.marker(
+                [26.24678, 60.77256],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_3e273503d3d5c05d71ec4500ee51b8d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3f790097e19c3c87ed54331df141a5c3 = $(`<div id="html_3f790097e19c3c87ed54331df141a5c3" style="width: 100.0%; height: 100.0%;">Station: 2000 Reservoir of Qasr-e Qand City<br>Population: 2850</div>`)[0];
+            popup_3e273503d3d5c05d71ec4500ee51b8d4.setContent(html_3f790097e19c3c87ed54331df141a5c3);
+        
+
+        marker_97463641a1b6b61901c18c9fcba54af5.bindPopup(popup_3e273503d3d5c05d71ec4500ee51b8d4)
+        ;
+
+        
+    
+    
+            marker_97463641a1b6b61901c18c9fcba54af5.bindTooltip(
+                `<div>
+                     2000 Reservoir of Qasr-e Qand City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7044e6f075052ce162d046764cc2651 = L.marker(
+                [26.17938, 60.59047],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_5fec1e17927332fbd4a40bcc41ed0a6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8102998ab3ef0a6776756bb5234f558 = $(`<div id="html_c8102998ab3ef0a6776756bb5234f558" style="width: 100.0%; height: 100.0%;">Station: Hamiri Complex Well No. 2<br>Population: 3752</div>`)[0];
+            popup_5fec1e17927332fbd4a40bcc41ed0a6d.setContent(html_c8102998ab3ef0a6776756bb5234f558);
+        
+
+        marker_a7044e6f075052ce162d046764cc2651.bindPopup(popup_5fec1e17927332fbd4a40bcc41ed0a6d)
+        ;
+
+        
+    
+    
+            marker_a7044e6f075052ce162d046764cc2651.bindTooltip(
+                `<div>
+                     Hamiri Complex Well No. 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27bcb0c21ade21b641352855166d82ba = L.marker(
+                [26.20775, 60.72522],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_ff03d5b8e8b4d76f5eeaa6ab34fd40cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3f75843903ca928eb25d56c800e55e2 = $(`<div id="html_a3f75843903ca928eb25d56c800e55e2" style="width: 100.0%; height: 100.0%;">Station: Chut Abad Village Well No. 1<br>Population: 1177</div>`)[0];
+            popup_ff03d5b8e8b4d76f5eeaa6ab34fd40cf.setContent(html_a3f75843903ca928eb25d56c800e55e2);
+        
+
+        marker_27bcb0c21ade21b641352855166d82ba.bindPopup(popup_ff03d5b8e8b4d76f5eeaa6ab34fd40cf)
+        ;
+
+        
+    
+    
+            marker_27bcb0c21ade21b641352855166d82ba.bindTooltip(
+                `<div>
+                     Chut Abad Village Well No. 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cd7b1389d4cf1e464150c02896da3df = L.marker(
+                [26.2627, 60.76475],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_b158d4dfb2783601fdd92a5e69c34b92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78af3e9aa71256af05bc6a3cccdef407 = $(`<div id="html_78af3e9aa71256af05bc6a3cccdef407" style="width: 100.0%; height: 100.0%;">Station: Shadigor Village<br>Population: 238</div>`)[0];
+            popup_b158d4dfb2783601fdd92a5e69c34b92.setContent(html_78af3e9aa71256af05bc6a3cccdef407);
+        
+
+        marker_9cd7b1389d4cf1e464150c02896da3df.bindPopup(popup_b158d4dfb2783601fdd92a5e69c34b92)
+        ;
+
+        
+    
+    
+            marker_9cd7b1389d4cf1e464150c02896da3df.bindTooltip(
+                `<div>
+                     Shadigor Village
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0878562e4105977aae0a69e08ef3545c = L.marker(
+                [26.20454, 60.98841],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_edcdb40ebab022e62744a91b328b67a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_870c4ed687b0f04f546e14df747955be = $(`<div id="html_870c4ed687b0f04f546e14df747955be" style="width: 100.0%; height: 100.0%;">Station: Koshok Complex<br>Population: 3780</div>`)[0];
+            popup_edcdb40ebab022e62744a91b328b67a1.setContent(html_870c4ed687b0f04f546e14df747955be);
+        
+
+        marker_0878562e4105977aae0a69e08ef3545c.bindPopup(popup_edcdb40ebab022e62744a91b328b67a1)
+        ;
+
+        
+    
+    
+            marker_0878562e4105977aae0a69e08ef3545c.bindTooltip(
+                `<div>
+                     Koshok Complex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f57f195a2aac20c9ff21955c37c293eb = L.marker(
+                [25.47672, 60.454865],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_192df1406630ff6b14bb1b235d950b38 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e171d2225ba7876edcaa30a1cc4c8e67 = $(`<div id="html_e171d2225ba7876edcaa30a1cc4c8e67" style="width: 100.0%; height: 100.0%;">Station: Gabolan<br>Population: 1250</div>`)[0];
+            popup_192df1406630ff6b14bb1b235d950b38.setContent(html_e171d2225ba7876edcaa30a1cc4c8e67);
+        
+
+        marker_f57f195a2aac20c9ff21955c37c293eb.bindPopup(popup_192df1406630ff6b14bb1b235d950b38)
+        ;
+
+        
+    
+    
+            marker_f57f195a2aac20c9ff21955c37c293eb.bindTooltip(
+                `<div>
+                     Gabolan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25a643c654cf8766358ebbca5d380fa4 = L.marker(
+                [25.47698, 60.44649],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_19ebfb622dd2400cd3420e809c346865 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9005eee6ce955b05e110992be907f5b7 = $(`<div id="html_9005eee6ce955b05e110992be907f5b7" style="width: 100.0%; height: 100.0%;">Station: Hamidabad<br>Population: 1810</div>`)[0];
+            popup_19ebfb622dd2400cd3420e809c346865.setContent(html_9005eee6ce955b05e110992be907f5b7);
+        
+
+        marker_25a643c654cf8766358ebbca5d380fa4.bindPopup(popup_19ebfb622dd2400cd3420e809c346865)
+        ;
+
+        
+    
+    
+            marker_25a643c654cf8766358ebbca5d380fa4.bindTooltip(
+                `<div>
+                     Hamidabad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc846642401a2a181393526b0d0ee0fb = L.marker(
+                [25.48423, 60.32652],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_c657a46021d938f3418e1693af0e8111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1036745aa0732ce2c73cc9097c57ab8d = $(`<div id="html_1036745aa0732ce2c73cc9097c57ab8d" style="width: 100.0%; height: 100.0%;">Station: Pazm (Khalij Abad)<br>Population: 4150</div>`)[0];
+            popup_c657a46021d938f3418e1693af0e8111.setContent(html_1036745aa0732ce2c73cc9097c57ab8d);
+        
+
+        marker_cc846642401a2a181393526b0d0ee0fb.bindPopup(popup_c657a46021d938f3418e1693af0e8111)
+        ;
+
+        
+    
+    
+            marker_cc846642401a2a181393526b0d0ee0fb.bindTooltip(
+                `<div>
+                     Pazm (Khalij Abad)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92721941709a39a8f5e2134e0330696b = L.marker(
+                [25.46854, 60.48903],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_ee8e700379e6ac5217c5f04ad851550a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30053cee922827b43b7a4abe5719af38 = $(`<div id="html_30053cee922827b43b7a4abe5719af38" style="width: 100.0%; height: 100.0%;">Station: Mooman Complex<br>Population: 4120</div>`)[0];
+            popup_ee8e700379e6ac5217c5f04ad851550a.setContent(html_30053cee922827b43b7a4abe5719af38);
+        
+
+        marker_92721941709a39a8f5e2134e0330696b.bindPopup(popup_ee8e700379e6ac5217c5f04ad851550a)
+        ;
+
+        
+    
+    
+            marker_92721941709a39a8f5e2134e0330696b.bindTooltip(
+                `<div>
+                     Mooman Complex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a066a57cd010281e9856f1bf9d3b9f3e = L.marker(
+                [25.5211, 60.29322],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_18431f417bd3c8dc9e9cded934f2ceaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ccd2f102587687798c3172746b969cc = $(`<div id="html_0ccd2f102587687798c3172746b969cc" style="width: 100.0%; height: 100.0%;">Station: Bansanat<br>Population: 3300</div>`)[0];
+            popup_18431f417bd3c8dc9e9cded934f2ceaf.setContent(html_0ccd2f102587687798c3172746b969cc);
+        
+
+        marker_a066a57cd010281e9856f1bf9d3b9f3e.bindPopup(popup_18431f417bd3c8dc9e9cded934f2ceaf)
+        ;
+
+        
+    
+    
+            marker_a066a57cd010281e9856f1bf9d3b9f3e.bindTooltip(
+                `<div>
+                     Bansanat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_267f0e342022a8f567f09b795aac41ae = L.marker(
+                [25.55354, 60.27744],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_9146d1c3ac4c06c0c2681907c86f8962 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_267f0e342022a8f567f09b795aac41ae.setIcon(custom_icon_9146d1c3ac4c06c0c2681907c86f8962);
+        
+    
+        var popup_c223852c7eeaa9f5a0434bb87368b5c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5ae633f60ca01f08dc93fb3a9bd3890 = $(`<div id="html_f5ae633f60ca01f08dc93fb3a9bd3890" style="width: 100.0%; height: 100.0%;">Station: Baworidan<br>Population: 210</div>`)[0];
+            popup_c223852c7eeaa9f5a0434bb87368b5c3.setContent(html_f5ae633f60ca01f08dc93fb3a9bd3890);
+        
+
+        marker_267f0e342022a8f567f09b795aac41ae.bindPopup(popup_c223852c7eeaa9f5a0434bb87368b5c3)
+        ;
+
+        
+    
+    
+            marker_267f0e342022a8f567f09b795aac41ae.bindTooltip(
+                `<div>
+                     Baworidan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6071300179977e9e494a49ebd4db8923 = L.marker(
+                [25.57791, 60.23892],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_647ff39e95f8560058c7e13bf5e4394c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66eae554220fc745ee986ab704b4d2be = $(`<div id="html_66eae554220fc745ee986ab704b4d2be" style="width: 100.0%; height: 100.0%;">Station: Shammeh Sar<br>Population: 560</div>`)[0];
+            popup_647ff39e95f8560058c7e13bf5e4394c.setContent(html_66eae554220fc745ee986ab704b4d2be);
+        
+
+        marker_6071300179977e9e494a49ebd4db8923.bindPopup(popup_647ff39e95f8560058c7e13bf5e4394c)
+        ;
+
+        
+    
+    
+            marker_6071300179977e9e494a49ebd4db8923.bindTooltip(
+                `<div>
+                     Shammeh Sar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8fc4c6c05b377a06aa0560a2fc5186f = L.marker(
+                [25.57884, 60.08178],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_4177180c317004d7320dfa1d29daf9b1 = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_f8fc4c6c05b377a06aa0560a2fc5186f.setIcon(custom_icon_4177180c317004d7320dfa1d29daf9b1);
+        
+    
+        var popup_a2ebae92feef61e3d666e4f2aa9edb3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1937a87671eb3ca87a9df7fd9a0e6bb9 = $(`<div id="html_1937a87671eb3ca87a9df7fd9a0e6bb9" style="width: 100.0%; height: 100.0%;">Station: Dowlat Abad<br>Population: 3120</div>`)[0];
+            popup_a2ebae92feef61e3d666e4f2aa9edb3a.setContent(html_1937a87671eb3ca87a9df7fd9a0e6bb9);
+        
+
+        marker_f8fc4c6c05b377a06aa0560a2fc5186f.bindPopup(popup_a2ebae92feef61e3d666e4f2aa9edb3a)
+        ;
+
+        
+    
+    
+            marker_f8fc4c6c05b377a06aa0560a2fc5186f.bindTooltip(
+                `<div>
+                     Dowlat Abad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d9903cc9852df11e14d59ba5367802d = L.marker(
+                [25.45264, 59.8167],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var custom_icon_bd56afe6cdbc874cc723f14f4399559e = L.icon({"iconSize": [30, 30], "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Solar_icon.svg"});
+        marker_1d9903cc9852df11e14d59ba5367802d.setIcon(custom_icon_bd56afe6cdbc874cc723f14f4399559e);
+        
+    
+        var popup_ea40355209b679e2f3438f5d3b83df4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2e7000565addc9db7538e6a996238bc9 = $(`<div id="html_2e7000565addc9db7538e6a996238bc9" style="width: 100.0%; height: 100.0%;">Station: Bir Complex<br>Population: 3450</div>`)[0];
+            popup_ea40355209b679e2f3438f5d3b83df4f.setContent(html_2e7000565addc9db7538e6a996238bc9);
+        
+
+        marker_1d9903cc9852df11e14d59ba5367802d.bindPopup(popup_ea40355209b679e2f3438f5d3b83df4f)
+        ;
+
+        
+    
+    
+            marker_1d9903cc9852df11e14d59ba5367802d.bindTooltip(
+                `<div>
+                     Bir Complex
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66f5fc88c17f8c8fd1eaddd6c6f34398 = L.marker(
+                [27.4488, 59.59529],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_95000f1f853d21ab18e0b67e999bdf54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fe4189d0f0dea43ea54501488bed5e1 = $(`<div id="html_0fe4189d0f0dea43ea54501488bed5e1" style="width: 100.0%; height: 100.0%;">Station: Khoda Bakhsh Well<br>Population: 1878</div>`)[0];
+            popup_95000f1f853d21ab18e0b67e999bdf54.setContent(html_0fe4189d0f0dea43ea54501488bed5e1);
+        
+
+        marker_66f5fc88c17f8c8fd1eaddd6c6f34398.bindPopup(popup_95000f1f853d21ab18e0b67e999bdf54)
+        ;
+
+        
+    
+    
+            marker_66f5fc88c17f8c8fd1eaddd6c6f34398.bindTooltip(
+                `<div>
+                     Khoda Bakhsh Well
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1322ceeee9573c8d069ad58be65cdb2a = L.marker(
+                [27.45078, 59.61018],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_d5ae7f6e67c423f7a9619b7c794c7c05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73a98023889dbc424c0ada0662db0b5c = $(`<div id="html_73a98023889dbc424c0ada0662db0b5c" style="width: 100.0%; height: 100.0%;">Station: Kala Kantak<br>Population: 1092</div>`)[0];
+            popup_d5ae7f6e67c423f7a9619b7c794c7c05.setContent(html_73a98023889dbc424c0ada0662db0b5c);
+        
+
+        marker_1322ceeee9573c8d069ad58be65cdb2a.bindPopup(popup_d5ae7f6e67c423f7a9619b7c794c7c05)
+        ;
+
+        
+    
+    
+            marker_1322ceeee9573c8d069ad58be65cdb2a.bindTooltip(
+                `<div>
+                     Kala Kantak
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7049315b0fc3c72f0b7bfd79c94645ab = L.marker(
+                [27.8788, 59.50907],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_23ea50f87930bf7b79591cd92b82bfc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b03eb4a6be7bb7dfcc7ce5212f6f2d01 = $(`<div id="html_b03eb4a6be7bb7dfcc7ce5212f6f2d01" style="width: 100.0%; height: 100.0%;">Station: Gaz Chahan<br>Population: 2372</div>`)[0];
+            popup_23ea50f87930bf7b79591cd92b82bfc4.setContent(html_b03eb4a6be7bb7dfcc7ce5212f6f2d01);
+        
+
+        marker_7049315b0fc3c72f0b7bfd79c94645ab.bindPopup(popup_23ea50f87930bf7b79591cd92b82bfc4)
+        ;
+
+        
+    
+    
+            marker_7049315b0fc3c72f0b7bfd79c94645ab.bindTooltip(
+                `<div>
+                     Gaz Chahan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eefc0913278b6044a7758653c64ba319 = L.marker(
+                [27.48558, 59.45428],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_4b1875593cd0e115d8117438f4dba959 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cca94d37cc67f7b4479c6c25faed8fa6 = $(`<div id="html_cca94d37cc67f7b4479c6c25faed8fa6" style="width: 100.0%; height: 100.0%;">Station: Dalgan Administration<br>Population: 4518</div>`)[0];
+            popup_4b1875593cd0e115d8117438f4dba959.setContent(html_cca94d37cc67f7b4479c6c25faed8fa6);
+        
+
+        marker_eefc0913278b6044a7758653c64ba319.bindPopup(popup_4b1875593cd0e115d8117438f4dba959)
+        ;
+
+        
+    
+    
+            marker_eefc0913278b6044a7758653c64ba319.bindTooltip(
+                `<div>
+                     Dalgan Administration
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7cbc98fd757c7b7bf2e2293ce2b52a43 = L.marker(
+                [27.44816, 59.55462],
+                {}
+            ).addTo(marker_cluster_ba5c3c82f9b978446c80f9a5bf147ff3);
+        
+    
+        var popup_9c77ff5cd18cb4c945a26e3e34a081a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c983b0627c4ba6aa1f18f9e48cd6659 = $(`<div id="html_3c983b0627c4ba6aa1f18f9e48cd6659" style="width: 100.0%; height: 100.0%;">Station: Jabrabad<br>Population: 2799</div>`)[0];
+            popup_9c77ff5cd18cb4c945a26e3e34a081a2.setContent(html_3c983b0627c4ba6aa1f18f9e48cd6659);
+        
+
+        marker_7cbc98fd757c7b7bf2e2293ce2b52a43.bindPopup(popup_9c77ff5cd18cb4c945a26e3e34a081a2)
+        ;
+
+        
+    
+    
+            marker_7cbc98fd757c7b7bf2e2293ce2b52a43.bindTooltip(
+                `<div>
+                     Jabrabad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
